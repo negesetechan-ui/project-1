@@ -1,0 +1,765 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+
+body {
+    width: 100%;
+    overflow-x: hidden; 
+    font-family: Arial, sans-serif;
+}
+
+.top {
+    background-color: #042F5C;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    color: white;
+    width: 100%;
+    padding: 15px 5%; /* Padding bitaa fi mirgaa safety buffer uuma */
+    position: relative;
+    /* margin: 5px auto; -> Kun uumamaan haqameera daangaa skreenii akka uffisuuf */
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+/* FIXED: margin-top fi width garmalee jeeqamu as keessaa haqameera */
+.logo i {
+    color: white;
+    font-size: 32px;
+    margin-right: 12px;
+}
+
+.logo h2 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.desktop-menu ul {
+    display: flex;
+    list-style: none; 
+    gap: 20px;       
+}
+
+.desktop-menu li {
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.mobile-menu {
+    display: none;
+}
+
+.menu-icons {
+    display: none; /* Desktop irratti nagaatti ni dhokata */
+    cursor: pointer;
+    font-size: 26px;
+    color: white;
+}
+
+.banner {
+    background-image:url("/image/salale\ background.jpeg");
+    background-size: cover;
+    color: white;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.imagebgr h2 {
+    margin-bottom: 30px;
+}
+
+.circle-title {
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+}
+
+/* Buttons Default Style */
+button, .learnbutton {
+    background-color: #042F5C;
+    color: white;
+    border-radius: 15px;
+    padding: 10px 24px;
+    font-size: 12px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+/* Default-n content hunda ni dhoksina, query jala qofa banuuf */
+.p1, .p2, .p3, .mobilep, .tabletp, .aboutustablet {
+    display: none;
+}
+
+.desktop {
+    display: block; /* Desktop irratti content proojektichaa ni agarsiisa */
+}
+.p3 {
+    display: block;
+}
+.Programs h1{
+    
+    color: blue;
+    font-size: 18px;
+    
+}
+.Programs-title {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+    margin-left: 10px;
+    position: sticky;
+}
+.icon{
+    background-color: #758ABF;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+
+}
+.iconIT{
+    display: none;
+}
+.iconMang{
+    background-color: #758ABF;
+    padding: 30px;
+}
+.iconEco{
+    background-color: #758ABF;
+    padding: 40px;
+}
+.iconIT{
+    background-color: #758ABF;
+    padding: 40px;
+}
+.Statistics-mobile{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 30px;
+    color: white;
+
+}
+.stu-mob{
+    background-color: #054891;
+    padding: 20px;
+    width: 30%;
+}
+.Lec-mob{
+    background-color: #054891;
+    padding: 20px;
+    width: 40%;
+}
+.newshead{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+   
+.tablet-info{
+    display: none;
+    justify-content: flex-start;
+    align-items: center;
+    border-right: 1px solids;
+    gap: 30px;
+     background-color: #054891;
+    padding: 30px;
+
+}
+.University-statistics h3{
+    display: none;
+}
+.Universitystat h3{
+    display: none;
+}
+.desktop-st-title h3{
+    display: none;
+
+}
+.desktop-title h3{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5px;
+}
+
+.desktop-statistics{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    background-color: #054891;
+    padding: 10px;
+}
+.card-LNE1{
+    display: none;
+}
+.card-LNE2{
+
+    display: none;
+}
+.card-News-Events1{
+    display: none;
+}
+.card-News-Events2{
+    display: none;
+}
+.card-News-Events3{
+    display: none;
+}
+.card-News-Events4{
+    display: none;
+}
+.card-hat i{
+    display: none;
+}
+
+.News-Events{
+    display: flex;
+}
+.mobile-footer {
+ display: none;
+ 
+}
+
+.desktop-footer {
+background: #003366;
+ color: white;
+padding: 25px 4% 12px;
+}
+
+.footer-content {
+display: flex;
+ justify-content: space-between;
+gap: 20px;
+}
+
+.footer-content h3,
+.footer-content h4 {
+ margin-bottom: 12px;
+}
+
+.footer-content p {
+font-size: 13px;
+ margin-bottom: 8px;
+}
+
+.footer-content i {
+margin-right: 8px;
+}
+
+.copyright {
+text-align: center;
+border-top: 1px solid #ffffff55;
+padding-top: 12px;
+ margin-top: 20px;
+font-size: 12px;
+}
+
+.slider-dots{
+    display: flex;
+    width: 20px;
+    height: 20px;
+    border-radius: 50px;
+}
+
+
+
+/* ==========================================================================
+   2. INTERMEDIATE TABLET ENGINE (Gidduu Irratti: Skreenii 601px hanga 991px)
+   ========================================================================== */
+@media (max-width: 991px) and (min-width: 601px) {
+    .desktop, .mobilep {
+        display: none;
+    }
+    .mobile-footer{
+        display: none;
+    }
+     .copyrigh{
+        display: none;
+    }
+     .tablet-footer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        color: white;
+        
+        font-size: 12px;
+        background-color: #003366;
+    }
+    .desktop-footer{
+        display: none;
+    }
+    .sala-log{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 10px;
+        font-size: 10px;
+        color: white;
+    }
+    .cop{
+        font: size 10px; 
+        color: white;
+    }
+     .sala-log i{
+        font-size: 30px;
+        color: white;
+     }
+     .news {
+ padding: 20px 3%;
+}
+ .news-list {
+ grid-template-columns: repeat(3, 1fr);
+ }
+.news-card.third-news {
+ display: none;
+}
+ .news-card img {
+height: 85px;
+ }
+ .join {
+ grid-column: span 1;
+ padding: 10px;
+ }
+.join i {
+font-size: 22px;
+ }
+ .join .cap {
+ display: none;
+}
+    .image-LNE1{
+        display: flex;
+        background-image: url("/image/hire.jpg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 200px;
+            height: 100px;
+            margin-bottom: 5px;
+    }
+   .lat{
+    color: #0616ff;
+   }
+   .par-LNE1{
+    color: #096ad1;
+   }
+   
+.latest-Ne .par-LNe{
+    display: none;
+}
+    .card-LNE1{
+        display: flex;
+        margin-top: 20px;
+        margin-left: 20px;
+        gap: 20px;
+        color: #054891;
+    }
+    .image-LNE2{
+        background-image: url("/image/salale students.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 200px;
+        height: 100px;
+
+
+    }
+    .read{
+        display: none;
+    }
+    .card-LNE2{
+        display: flex;
+        margin-top: 20px;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+    .view-All{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        margin-top: 40px;
+        margin-left: 50px;
+        color: #0378f5;
+    }
+.tabletlatest{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+
+}
+.par-LNE2 h3{
+    color:#042F5C
+    
+}
+.par-LNE2{
+    color: #054891;
+}
+    
+    
+    .latest-Ne-Ev{
+        display: flex;
+    }
+
+    .latest-icon{
+        display: none;
+    }
+    .Statistics h3{
+        display: none;
+    }
+    .desktop-title h3{
+        display: none;
+    }
+    .desktop-statistics{
+        display: none;
+    }
+    .tablet-info{
+        display: flex;
+    }
+    .University-statistics h3{
+    display: flex;
+}
+    .Statistics-mobile{
+        display: none;
+    }
+      .iconMang,.iconEco{
+        display: flex;
+    }
+    
+    
+    .tabletp {
+        display: flex ;
+        flex-direction: row; /* Suuraa fi barreeffamni wal cinaa akka ta'an */
+        align-items: center;
+        gap: 30px;
+        width: 100%;
+        padding: 40px 5%;
+    }
+
+    
+    .tabletimage {
+        display: flex;
+        background-image: url("/image/salale background.jpeg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 100%;       /* Iddoo isaa guutuu uffisa */
+        height: 240px;     /* Ol-fi-gadi suuraa mul'isuuf */
+        border-radius: 8px;
+    }
+
+    .p2 {
+        display: block !important;
+        margin-top: 10px;
+        font-size: 16px;
+        color:#758ABF;
+
+    }
+    .learnbutton{
+        display: flex;
+    }
+}
+
+/* ==========================================================================
+   3. MOBILE SMARTPHONE ENGINE (Jala Irratti: Skreenii 600px fi Isaa Gadii)
+   ========================================================================== */
+@media (max-width: 600px) {
+    .desktop-menu {
+        display: none; /* Row desktop menu moobaayila irratti ni dhoksina */
+    }
+   
+    .read,.i{
+        display: flex;
+    }
+    
+    .copyrigh{
+        display: none;
+    }
+    .desktop-footer{
+    display: none;
+}
+  .tablet-footer{
+        display: none;
+    }
+.mobile-footer{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    color: white;
+      margin:30px;
+      margin-bottom: 10px;
+    background-color:#003366;
+    .mobile-footer h3,i,p{
+        margin-left: 40px;
+        padding: 5px
+      
+    }
+    .image-LNe{
+        margin-bottom: 20px;
+}
+    
+    .lat h3{
+        display: none;
+    }
+    .view-All{
+        display: none;
+    }
+    .latest-Ne{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        margin-left: 20px;
+            margin-bottom: 10px;
+    }
+    .latest-icon{
+        margin-left: 30px;
+        margin-bottom: 10px;
+    }
+    .par-LNe{
+        color: #054891;
+    }
+    
+    .Universitystat h3{
+    display: flex;
+}
+.latest-Ne-Ev{
+    display: none;
+}
+
+    
+}
+ .latest-icon{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 10px;
+    }
+    .image-LNe{
+        background-image: url("/image/graduation\ class.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 40%;
+        height: 100px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+    }
+   
+ .desktop-title h3{
+        display: none;
+    }
+    
+    
+.desktop-statistics{
+        display: none;
+    }
+  .University-statistics h3{
+    display: none;
+}
+    .iconMang,.iconEco,.iconIT{
+        display: none;
+    }
+    .par{
+        display: flex;
+        justify-content:center ;
+        align-items: center;
+        
+    }
+    .aboutusmobile{
+        display: flex;
+    }
+.about2 strong{
+
+    color: #758ABF;
+}
+    
+    .menu-icons {
+        display: flex; /* Hamburger menu moobaayila irratti qofa ni banama */
+        margin-right: 0;
+    }
+
+    .desktop, .tabletp {
+        display: none;
+    }
+
+    .mobilep {
+        display:flex; /* parent container ni banna */
+        width: 100%;
+        text-align: center;
+        padding: 30px 5%;
+    }
+
+    /* FIXED MOBILE IMAGE: Ol-fi-gadi isaa qajeelatti mul'ata */
+    .mobileimage {
+        display: flex;
+        background-image: url("/image/photo_2026-10-14_21-50-01.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 60%; 
+        height: 180px; 
+        border-radius: 6px;
+        margin-bottom: 15px;
+        
+    }
+
+    .p1 {
+        display: block !important;
+        font-size: 15px;
+        color: #555;
+        margin-left: 10px;
+        color: #758ABF
+
+    }
+}
+@media(min-width:992px)
+{
+  
+.imagedeskt{
+    background-image: url("/image/salale\ students.jpg");
+      background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 100px;    /* Iddoo isaa guutuu uffisa */
+        height: 100px;     /* Ol-fi-gadi suuraa mul'isuuf */
+        border-radius: 8px;
+
+}
+ .mobile-footer{
+        display: none;
+    }
+    .tablet-footer{
+        display: none;
+    }
+    
+    .desktop-footer{
+        display: flex;
+        justify-content:space-around ;
+        align-items: center;
+        margin-top: 10px;
+        padding: 5px;
+        
+
+            
+        background-color: #003366;
+    }
+     .desktop-footer h4{
+        font-size: 15px;
+     }
+    .copyrigh{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-size: 12px;
+        background-color: #031b33;
+    }
+    .footer-content{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin-right: 20px;
+        font-size: 15px;
+    }
+    .Statistics-mobile{
+        display: none;
+    }
+
+ .news-list {
+ grid-template-columns: repeat(4, 1fr);
+ }
+.card-News-Events1-image{
+    background-image: url("/image/hire.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 200px;
+    height: 100px;
+
+}
+
+.card-News-Events2-image{
+    background-image: url("/image/salale students.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 200px;
+    height: 100px;
+}
+.card-News-Events3{
+    background-image: url("/image/Slu -background.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 200px;
+    height: 100px;
+}
+ .latest-Ne{
+        display: none;
+    }
+.desktop-statistics{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #003366;
+        gap: 5px;
+        color: white;
+        margin-right: 2px;
+        
+    }
+    .lect{
+        margin-left: 90px;
+    }
+    .desktop-title{
+        background-color: #003366;
+        color: white;
+        
+    }
+    .desktop-title h3{
+        display:flex;
+    }
+    
+.desktop{
+    display: flex;
+    justify-content:space-around;
+    margin-top: 15px;
+    
+
+}
+.iconIT{
+    display: flex;
+}
+.p3{
+    color: #054891;
+}
+.about-our-university {
+    color: #0851a0e3;
+}
+.Statistics h3{
+    display: none;
+}
+  .University-statistics h3{
+    display: none;
+}
+.latest-icon{
+    display: none;
+}
+
+
+}
+
